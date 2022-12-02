@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    color: black;
+    
+
+}
+
+/*generalt*/
+
+body{
+   
+    font-weight: 400;
+    line-height: 1.8;
+    background-color: rgb(212, 235, 235);
+    border-width: 100%;
+
+
+
+}
+
+
+/*grid*/
+
+#container{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 80px 600px auto  100px;
+    width: 100%;
+    margin: 0 auto;
+    
+
+}
+
+#meny{
+
+    grid-column-start: span 2;
+    
+        
+}
+
+header{
+    grid-column-start: span 2;
+}
+
+
+
+
+main{
+    grid-column-start: span 1;
+
+}
+
+footer{
+    grid-column-start: span 2;
+    
+}
+
+
+/*nav*/
+
+
+
+  #meny{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(29, 83, 177);
+    
+
+
+  }
+
+
+  
+
+#meny li{
+    display: inline-block;
+    font-weight: 800;
+}
+
+
+  ul a{
+   
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    line-height: 80px;
+    transition-duration: 1s;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+
+
+.logo{
+    line-height: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin: 3px;
+
+}
+
+#meny a:hover{
+    background-color: aqua;
+    color: black;
+
+}
+
+
+
+
+header h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+
+    
+    
+    
+}
+
+header img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+       
+ }
+
+ #article {
+    display: block;
+    margin: 0 auto ;
+    width: 700px;
+    font-size: 20px;
+    padding: 10px;
+   
+
+    
+
+}
+
+
+p {
+    
+    margin-top: 40px;
+    line-height: 50px;
+    
+}
+
+ol{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 50px;
+
+    
+}
+
+
+h3{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+
+
+
+}
+
+h2{
+    font-size:25px ;
+    
+}
+    
+
+/*table*/
+
+#layout2 {
+    display: block;
+    margin: 0 auto;
+    width:800px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 1.5rem;
+    
+        
+ }
+
+ 
+
+
+
+
+#layout {
+    display: block;
+    margin: 0 auto;
+    width:800px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 1.5rem;
+    
+        
+ }
+
+ 
+
+    
+    
+#table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 290px 300px ;
+    width: 100%;
+    height: 900px;
+    text-align: left;
+    
+    
+        
+       
+    
+} 
+
+
+
+
+
+.head{
+    background-color: blue;
+    color: rgb(229, 226, 238);
+    font-weight: bold;
+    border-left: 1px solid;
+
+
+
+ }
+ 
+ 
+.border-right {
+    border-right: 1px solid;
+        
+}
+    
+.bottom {
+    border-bottom: 1px solid;
+        
+}
+
+#table div {
+    border-left: 1px solid;
+    border-top: 1px solid;
+
+    padding: 10px;
+}
+
+#table p {
+    font-size: 1rem;
+    text-align: start;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 1px;
+   line-height: 120%;
+   width: 200px;
+}
+
+
+
+/*kilder*/
+
+#kilder {
+    font-size: 25px;
+    padding-left: 100px;
+
+        
+}
+
+ #kilder a {
+    display: list-item;
+    background-color: rgb(212, 235, 235);
+    color: blue;
+    transition: 0.5s;
+    font-size: 18px;
+    margin-top: 20px;
+    
+   
+
+}
+
+
+/*fotter*/
+
+
+#footer{
+    background-color: rgb(29, 83, 177);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+    padding: 40px;
+
+    gap: 1rem;
+
+
+}   
+
+/*media quaires*/
+@media (max-width: 600px){
+    Body{
+        width: 100%;
+        
+    }}
+
+@media (max-width: 560px){
+    #container{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 150px 600px auto 150px;
+        
+    
+    }
+     #meny{
+        width: 100%;
+     }
+    
+     
+    #article {
+        display: block;
+        width: 300px;
+        font-size: 20px;
+        margin: 0 auto ;
+    
+        
+    
+    }
+
+
+    #layout{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 900px;
+      
+     }
+
+     #table{
+    
+        grid-template-columns: 30px 140px 140px 140px;
+        grid-template-rows: 60px 510px 590px 600px ;
+        }
+
+        #table p {
+            font-size: 1rem;
+            text-align: center;
+           width: 90px;
+        }
+        
+    
+
+        #kilder {
+            width: 170px;
+    margin-right: 10px;
+            align-items: center;
+        }
+        
+        
+
+    
+     
+    }
+
+
+
+
+   
+    
+   
+
+    

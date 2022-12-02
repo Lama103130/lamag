@@ -1,44 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <meta name="description" content="kontakt informasjon, et kart og et kontaktskjema ">
+    <meta name="keywords" content="kontakt, email, mobile">
+    <meta name="author" content="Lama-Ghawi">
+    <link rel="canonical" href="https://itstud.hiof.no/~lamag/kontaktoss.html">
 
-    
-    <title>kontakt oss</title>
-</head>
+    <!--Facebook Open Graph-->
+    <meta property="og:title" content="Vil du kontakte oss?" />
+    <meta property="og:description" content="kontakt informasjon, et kart og et kontaktskjema." />
+    <meta property="og:image" content="https://itstud.hiof.no/~lamag/index.html/images/lautaro-andreani-xkBaqlcqeb4-unsplash.jpg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="nb_NO" />
+    <meta property="og:url" content="https://itstud.hiof.no/~lamag/kontaktoss.html"/>
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Vil du kontakte oss?"/>
+    <meta name="twitter:description" content="kontakt informasjon, et kart og et kontaktskjema." />
+    <meta name="twitter:image" content="https://itstud.hiof.no/~lamag/kontaktoss.html"/>
+
+    <link rel="stylesheet" href="css/kontaktoss.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="images/logo.icon">
+
+    <title>Vil du kontakte oss</title>
 
 <body>
-    <nav>
-        <h3><a href="index.html">Logo</a></h3>
-        <ul>
-            <li><a href="index.html">Hjem</a></li>
+    <!--facebook kode tatt fra https://developers.facebook.com/docs/plugins/share-button-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="yRReWf4D"></script>
+
+    <div id="grid-container">
+        <nav id="meny" role="navigation">
+               <a href="index.html"><img class="logo" src="images/favicon.ico" alt="logo webutvikling"></a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
                 <li><a href="uuvsseo.html">UU VS SEO</a></li>
                 <li><a href="cms.html">CMS</a></li>
                 <li><a href="analyse.html">Analyse</a></li>
                 <li><a href="kontaktoss.html">Kontakt oss</a></li>
 
-        </ul>
+            </ul>
         
 
-    </nav>
-    <main>
-       <h2>kontakt oss:</h2> 
-         
-        <a href="https://accounts.google.com/SignOutOptions?hl=ar&continue=https://mail.google.com&service=mail">lama.ghawi13@gmail.com></a>
-         
-    </main>
-    <footer>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        
-    </footer>
+        </nav>
 
+        <header>
+            <h1>Vil du kontakte oss?</h1> 
+            <div id="kontakt">
+                <section class="postadress">
+                      <h3>postadressen:</h3>
+                      <p>Høgskolen i Østfold</p>
+                      <p>Postboks 700</p> 
+                      <p>NO-1757 Halden</p>
+                      <p>Norway</p>
+                </section>
+            
+                <section class="mobile">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>mobile:</h3>
+                    <p>69 60 80 00</p>
+                    </section>
+                <section class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                        
+                </section>
+            </div>
+
+        </header>
+    
+      
+        <main role="main">
+
+                <section id="form">
+            
+                     <iframe width="400" height="400" src="https://maps.google.com/maps?q=h%C3%B8yskole%20Halden&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    
+                    <form action="php/index.php">
+               
+                       
+                    
+                         <input type="text" name="name" size="30" value="Navn:"><br>
+
+                         <input type="text" name="age" size="30" value="age:"><br>
+
+                         <input type="text" name="email" size="30" value="E-post:"><br>
+                          <textarea name="massage" id="melding" cols="25" rows="8" placeholder="Melding"></textarea>
+                         <input id="button" type="submit" name="submit" role="button" value="send">
+                    
+                    </form>
+
+                 </section>
+
+        </main>
+
+        <!--footer-->
+        <footer role="contentinfo" >
+            <!--facebook button har tatt fra https://developers.facebook.com/docs/plugins/share-button-->
+            <div class="fb-share-button" data-href="https://itstud.hiof.no/~lamag/kontaktoss.html" data-layout="button_count"
+             data-size="large"><a target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Elamag%2Findex.html%2F&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore">Share</a></div> 
+
+                
+             <!--twitter button fra https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup-->
+            <a class="twitter-share-button" 
+             href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            data-size="large"> Tweet</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </footer>
+    </div>
+
+
+   
     
 </body>
 </html>
+
+
